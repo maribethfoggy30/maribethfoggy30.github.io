@@ -295,6 +295,9 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
   }
+  .quantum-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .cert-card {
     background: var(--surface);
     border: 1px solid var(--rule);
@@ -370,7 +373,7 @@
   }
   .cert-badge {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 180px;
     object-fit: cover;
     display: block;
     border-bottom: 1px solid var(--rule);
@@ -383,7 +386,7 @@
   }
   .cert-placeholder {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -493,6 +496,7 @@
     .resume-box { flex-direction: column; align-items: flex-start; gap: 14px; }
     .nav-links { gap: 12px; font-size: 0.78rem; overflow-x: auto; }
     .cert-grid { grid-template-columns: 1fr; }
+    .quantum-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
 
   /* Edit mode */
@@ -710,7 +714,7 @@
     <div class="cert-group">
       <h3 class="cert-group-title">Quantum Computing</h3>
 
-      <div class="cert-grid">
+      <div class="cert-grid quantum-grid">
         <article class="cert-card quantum-card">
           <img
             class="cert-badge"
@@ -769,14 +773,14 @@
       <div class="cert-grid">
         <article class="cert-card">
           <span class="cert-status completed">Certified</span>
-          <h3>Emergency Medical Technician - 548488</h3>
+          <h3>Emergency Medical Technician</h3>
           <div class="cert-issuer">New York State Department of Health</div>
           <p>Certified to provide prehospital emergency assessment, stabilization, and basic life support care.</p>
-          <div class="emt-note">Credential documentation available upon request.</div>
+          <div class="emt-note">NYS EMT Certification #548488 · documentation available upon request.</div>
         </article>
 
         <article class="cert-card">
-          <span class="cert-status completed">Completed</span>
+          <span class="cert-status completed">Certified</span>
           <h3>New York State Firefighter I Training</h3>
           <div class="cert-issuer">New York State Office of Fire Prevention and Control</div>
           <p>Completed the exterior and interior firefighting curriculum that comprises New York State Firefighter I training, with additional firefighter-survival and self-rescue instruction.</p>
