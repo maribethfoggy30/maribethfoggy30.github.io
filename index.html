@@ -3,10 +3,401 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sam Stryker</title>
+  <meta name="description" content="Sam Stryker — student researcher working in quantum computing, quantum error mitigation, and quantum sensing.">
+  <meta name="author" content="Sam Stryker">
+  <meta property="og:title" content="Sam Stryker | Quantum Research Portfolio">
+  <meta property="og:description" content="Research, projects, experience, and service in quantum computing, physics, firefighting, and EMS.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samstryker.github.io">
+  <meta name="theme-color" content="#09111f">
+  <title>Sam Stryker | Quantum Research Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
+
 <body>
-  <h1>Sam Stryker</h1>
-  <p>My personal website is live.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Sam Stryker home">
+        <span class="brand-mark">S</span>
+        <span>Sam Stryker</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Quantum computing · Physics · Engineering</p>
+          <h1>Building practical methods for noisy quantum systems.</h1>
+          <p class="hero-intro">
+            I am Sam Stryker, a student researcher focused on quantum error mitigation,
+            quantum sensing, and the behavior of quantum systems under real-world noise.
+            My work combines theory, simulation, and experiments on quantum hardware.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">Explore my research</a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="hero-links" aria-label="Profile links">
+            <a href="https://github.com/samstryker" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="assets/Sam-Stryker-Resume.pdf">Résumé ↗</a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Research profile">
+          <div class="orbit" aria-hidden="true">
+            <span class="orbit-core">|ψ⟩</span>
+            <span class="orbit-dot orbit-dot-one"></span>
+            <span class="orbit-dot orbit-dot-two"></span>
+            <span class="orbit-dot orbit-dot-three"></span>
+          </div>
+          <div>
+            <p class="mini-label">Current focus</p>
+            <h2>Scalable Bayesian error mitigation</h2>
+            <p>
+              Developing quantum-derived priors from shadows, calibration data,
+              and targeted process characterization.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats-section" aria-label="Selected highlights">
+      <div class="container stats-grid">
+        <article>
+          <strong>87%</strong>
+          <span>reported reduction in mean absolute error in an initial Bayesian-informed ZNE experiment</span>
+        </article>
+        <article>
+          <strong>127</strong>
+          <span>qubits on IBM Eagle hardware used in experimental work</span>
+        </article>
+        <article>
+          <strong>2</strong>
+          <span>primary research directions: error mitigation and quantum sensing</span>
+        </article>
+        <article>
+          <strong>24/7</strong>
+          <span>commitment to public service through firefighting and EMS</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected research</p>
+          <h2>Research at the boundary between theory and hardware</h2>
+          <p>
+            I am interested in methods that make quantum devices more useful now,
+            while also studying the physical mechanisms that limit their performance.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card featured reveal">
+            <div class="card-topline">
+              <span>Quantum error mitigation</span>
+              <span>Completed study</span>
+            </div>
+            <h3>Bayesian-Informed Zero-Noise Extrapolation</h3>
+            <p>
+              A framework combining zero-noise extrapolation with simulation-derived
+              Bayesian priors to improve the stability and accuracy of expectation-value
+              estimates from noisy quantum hardware.
+            </p>
+            <ul class="tag-list" aria-label="Methods">
+              <li>Qiskit</li>
+              <li>IBM Quantum</li>
+              <li>Bayesian inference</li>
+              <li>Noise folding</li>
+            </ul>
+            <div class="result-box">
+              <span>Initial result</span>
+              <strong>MAE reduced by approximately 87%</strong>
+              <p>
+                In a reported three-qubit experiment, the Bayesian estimate was substantially
+                closer to the ideal value than the unconstrained extrapolation.
+              </p>
+            </div>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="card-topline">
+              <span>Quantum error mitigation</span>
+              <span>Ongoing</span>
+            </div>
+            <h3>Quantum-Derived Priors for Scalable Error Mitigation</h3>
+            <p>
+              Extending Bayesian-informed error mitigation beyond classically simulable
+              systems using quantum shadows, calibration-derived information, and limited
+              process characterization of high-impact circuit regions.
+            </p>
+            <ul class="tag-list" aria-label="Methods">
+              <li>Classical shadows</li>
+              <li>Process matrices</li>
+              <li>Calibration data</li>
+              <li>VQE</li>
+            </ul>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="card-topline">
+              <span>Quantum sensing</span>
+              <span>Research proposal</span>
+            </div>
+            <h3>Hadron Irradiation of NV-Center Diamonds</h3>
+            <p>
+              A proposed study of how GeV-scale hadron irradiation changes the spin
+              coherence and sensing performance of nitrogen-vacancy centers in diamond,
+              with relevance to radiation-rich environments.
+            </p>
+            <ul class="tag-list" aria-label="Topics">
+              <li>NV centers</li>
+              <li>Spin coherence</li>
+              <li>Radiation damage</li>
+              <li>Quantum sensing</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technical work</p>
+          <h2>Projects and computational methods</h2>
+          <p>
+            Selected work in quantum software, simulation, statistical analysis,
+            and experimental design.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <span class="project-number">01</span>
+            <h3>Local Circuit Folding for ZNE</h3>
+            <p>
+              Implemented noise scaling through local unitary folding,
+              using factors such as λ = 1, 3, 5, 7, and 9.
+            </p>
+            <a href="https://github.com/samstryker" target="_blank" rel="noreferrer">View GitHub profile ↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-number">02</span>
+            <h3>Quantum Hardware Data Analysis</h3>
+            <p>
+              Built workflows for expectation-value estimation, uncertainty analysis,
+              extrapolation, and comparison against ideal simulation.
+            </p>
+            <a href="https://github.com/samstryker" target="_blank" rel="noreferrer">View repositories ↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-number">03</span>
+            <h3>Variational Quantum Algorithms</h3>
+            <p>
+              Explored VQE-style circuits, Hamiltonian estimation, ansatz design,
+              and noisy simulation for molecular and model-system applications.
+            </p>
+            <a href="https://github.com/samstryker" target="_blank" rel="noreferrer">View repositories ↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-number">04</span>
+            <h3>Quantum Education and Communication</h3>
+            <p>
+              Created technical explanations, figures, and presentations translating
+              advanced quantum ideas for broader scientific audiences.
+            </p>
+            <a href="#contact">Request materials →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education and experience</p>
+          <h2>Learning across research, engineering, and public service</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-meta">
+              <span>2026</span>
+              <span>Quantum computing</span>
+            </div>
+            <div>
+              <h3>Qiskit Global Summer School</h3>
+              <p>
+                Advanced-track study in quantum computing, combining technical lectures,
+                guided labs, and implementation work in Qiskit.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-meta">
+              <span>2026</span>
+              <span>International study</span>
+            </div>
+            <div>
+              <h3>Sungkyunkwan University International Summer Semester</h3>
+              <p>
+                International academic experience in Seoul, South Korea, with coursework
+                and cross-cultural study.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-meta">
+              <span>2025</span>
+              <span>Molecular engineering</span>
+            </div>
+            <div>
+              <h3>University of Chicago Summer Session</h3>
+              <p>
+                Completed Pathways in Molecular Engineering, including laboratory work,
+                technical writing, and exposure to research across molecular engineering.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-meta">
+              <span>Ongoing</span>
+              <span>Independent research</span>
+            </div>
+            <div>
+              <h3>Quantum Computing Research</h3>
+              <p>
+                Conducting long-term research in quantum error mitigation with mentorship
+                and experimental work using IBM quantum hardware.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="recognition" class="section section-alt">
+      <div class="container split-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Recognition</p>
+          <h2>Selected awards and milestones</h2>
+        </div>
+
+        <div class="recognition-list">
+          <article class="recognition-item reveal">
+            <span>Westchester Science & Engineering Fair</span>
+            <strong>Third Place — Computer Science</strong>
+          </article>
+          <article class="recognition-item reveal">
+            <span>Somers Science Fair</span>
+            <strong>First Place — Research Proposal</strong>
+          </article>
+          <article class="recognition-item reveal">
+            <span>University of Chicago Summer Session</span>
+            <strong>Final course grade: 100%</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="section">
+      <div class="container service-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Service</p>
+          <h2>Firefighting and emergency medical services</h2>
+          <p>
+            Outside research, I serve my community through volunteer firefighting
+            and emergency medical response. These roles have shaped how I approach
+            teamwork, preparation, responsibility, and decision-making under pressure.
+          </p>
+        </div>
+
+        <div class="service-cards">
+          <article class="service-card reveal">
+            <span>Fire</span>
+            <h3>Volunteer Firefighter</h3>
+            <p>
+              Firefighter I training and operational experience emphasizing teamwork,
+              technical competence, and disciplined response.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span>EMS</span>
+            <h3>Emergency Medical Technician</h3>
+            <p>
+              Emergency medical training and ambulance service focused on patient care,
+              assessment, communication, and calm decision-making.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Interested in quantum research, collaboration, or technical discussion?</h2>
+        </div>
+
+        <div class="contact-panel reveal">
+          <p>
+            I welcome conversations about quantum error mitigation, quantum sensing,
+            research opportunities, and scientific communication.
+          </p>
+          <a class="button button-primary" href="mailto:YOUR_EMAIL_ADDRESS">Email me</a>
+
+          <div class="contact-links">
+            <a href="https://github.com/samstryker" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="assets/Sam-Stryker-Resume.pdf">Résumé</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Sam Stryker</p>
+      <p>Built with HTML, CSS, and JavaScript · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
 </body>
 </html>
